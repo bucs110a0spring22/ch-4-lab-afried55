@@ -5,7 +5,7 @@ import math
 # If you have anything outside of a function, 
 # then you do not fully understand functions
 # and should review how they work or ask for help
-def drawSineCurve(my_turtle):
+def drawSineCurve(my_turtle=None):
   my_turtle.up()
   my_turtle.goto(math.radians(-360),math.sin(math.radians(-360)))
   my_turtle.down()
@@ -14,21 +14,21 @@ def drawSineCurve(my_turtle):
     y = math.sin(math.radians(angle))
     my_turtle.goto(x, y)
 
-def setupWindow(my_window):
+def setupWindow(my_window=None):
   turtle.setworldcoordinates(-math.radians(360),-1,math.radians(360),1)
   my_window.bgcolor("hotPink")
 
-def setupAxis(turtle_object):
-  turtle_object.speed(10)
-  turtle_object.down()
-  turtle_object.forward(math.radians(360))
-  turtle_object.backward(2*math.radians(360))
-  turtle_object.forward(math.radians(360))
-  turtle_object.right(90)
-  turtle_object.forward(1)
-  turtle_object.backward(2)
+def setupAxis(my_turtle=None):
+  my_turtle.speed(10)
+  my_turtle.down()
+  my_turtle.forward(math.radians(360))
+  my_turtle.backward(2*math.radians(360))
+  my_turtle.forward(math.radians(360))
+  my_turtle.right(90)
+  my_turtle.forward(1)
+  my_turtle.backward(2)
 
-def drawCosineCurve(my_turtle):
+def drawCosineCurve(my_turtle=None):
   my_turtle.up()
   my_turtle.goto(math.radians(-360),math.cos(math.radians(-360)))
   my_turtle.down()
@@ -37,7 +37,7 @@ def drawCosineCurve(my_turtle):
     y = math.cos(math.radians(angle))
     my_turtle.goto(x, y)
 
-def drawTangentCurve(my_turtle):
+def drawTangentCurve(my_turtle=None):
   my_turtle.up()
   my_turtle.goto(math.radians(-360),math.tan(math.radians(-360)))
   my_turtle.down()

@@ -6,6 +6,9 @@ import math
 # then you do not fully understand functions
 # and should review how they work or ask for help
 def drawSineCurve(my_turtle=None):
+  '''this function draws a sine curve
+  args: my_turtle (turtle object)
+  return: None'''
   my_turtle.up()
   my_turtle.goto(math.radians(-360),math.sin(math.radians(-360)))
   my_turtle.down()
@@ -15,10 +18,16 @@ def drawSineCurve(my_turtle=None):
     my_turtle.goto(x, y)
 
 def setupWindow(my_window=None):
-  turtle.setworldcoordinates(-math.radians(360),-1,math.radians(360),1)
+  '''This function sets the world coordinates and background color for the    window 
+  args: my_window(screen)
+  return: None'''
+  my_window.setworldcoordinates(-math.radians(360),-1,math.radians(360),1)
   my_window.bgcolor("hotPink")
 
 def setupAxis(my_turtle=None):
+  '''This function draws an axis
+  args: my_turtle (turtle object)
+  return: None'''
   my_turtle.speed(10)
   my_turtle.down()
   my_turtle.forward(math.radians(360))
@@ -29,6 +38,9 @@ def setupAxis(my_turtle=None):
   my_turtle.backward(2)
 
 def drawCosineCurve(my_turtle=None):
+  '''this function draws a cosine curve
+  args: my_turtle (turtle object)
+  return: None'''
   my_turtle.up()
   my_turtle.goto(math.radians(-360),math.cos(math.radians(-360)))
   my_turtle.down()
@@ -38,6 +50,9 @@ def drawCosineCurve(my_turtle=None):
     my_turtle.goto(x, y)
 
 def drawTangentCurve(my_turtle=None):
+  '''this function draws a tangent curve
+  args: my_turtle (turtle object)
+  return: None'''
   my_turtle.up()
   my_turtle.goto(math.radians(-360),math.tan(math.radians(-360)))
   my_turtle.down()

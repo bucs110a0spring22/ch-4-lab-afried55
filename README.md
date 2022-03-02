@@ -8,7 +8,7 @@
 _Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
-This program make a sine, cosine, and tangent graph with turtle. It also sets the world coordinates and makes an axis. 
+This program makes a sine, cosine, and tangent graph with turtle. It also sets the world coordinates and makes an axis. 
 
 ## GRACE DAYS
 Grace days used for this assignment: 0
